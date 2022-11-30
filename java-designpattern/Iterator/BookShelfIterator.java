@@ -17,5 +17,7 @@ public class BookSHelfIterator implements Iterator {
 
     public Object next() {
         Book book = bookShelf.getBookAt(index);
+        index++;
+        return book;
     }
 }
